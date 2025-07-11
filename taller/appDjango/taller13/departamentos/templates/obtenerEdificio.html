@@ -1,0 +1,13 @@
+{% extends 'master.html' %}
+{% block content %}
+
+<h2>Detalle del Edificio</h2>
+
+<p><b>Nombre:</b> {{ edificio.nombre }}</p>
+<p><b>Dirección:</b> {{ edificio.direccion }}</p>
+<p><b>Ciudad:</b> {{ edificio.ciudad }}</p>
+<p><b>Tipo:</b> {{ edificio.tipo }}</p>
+
+<a href="{% url 'crear_departamento_edificio' edificio.id %}">Agregar Departamento a este Edificio</a>
+
+{% endblock %}
