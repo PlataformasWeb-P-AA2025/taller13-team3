@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Demo</title>
+  </head>
+  <body>
+    <h5>Listado de Edificios - {{ numero_edificios }}</h5>
+
+    {% for e in edificios %}
+    <ol>
+      <li><b>Nombre:</b> {{ e['nombre'] }}</li>
+      <li><b>Dirección:</b> {{ e['direccion'] }}</li>
+      <li><b>Ciudad:</b> {{ e['ciudad'] }}</li>
+      <li><b>Tipo:</b> {{ e['tipo'] }}</li>
+    </ol>
+    <hr>
+    {% endfor %}
+  </body>
+</html>
